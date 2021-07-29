@@ -18,7 +18,7 @@ const db = require("./app/models")
 db.sequelize.sync()
 
 app.get("/", (req, res)=>{
-    res.json({ message: "welcome" })
+    res.json({ message: "welcome here" })
 })
 
 require("./app/routes/user.routes")(app)
